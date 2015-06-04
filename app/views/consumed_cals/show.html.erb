@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cal consume:</strong>
+  <%= @consumed_cal.cal_consume %>
+</p>
+
+<p>
+  <strong>Consume date:</strong>
+  <%= @consumed_cal.consume_date %>
+</p>
+
+<%= link_to 'Edit', edit_consumed_cal_path(@consumed_cal) %> |
+<%= link_to 'Back', consumed_cals_path %>

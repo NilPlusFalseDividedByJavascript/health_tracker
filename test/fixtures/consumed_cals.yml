@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cal_consume: 1
+  consume_date: 2015-06-04
+
+two:
+  cal_consume: 1
+  consume_date: 2015-06-04
