@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :excercises
   resources :steps
   resources :consumed_cals
   resources :weights
