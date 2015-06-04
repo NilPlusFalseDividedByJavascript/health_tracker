@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class WeightControllerTest < ActionController::TestCase
+class WeightsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
@@ -15,6 +15,7 @@ class WeightControllerTest < ActionController::TestCase
     get :create
     assert_response :success
   end
+
 
   test "should get new" do
     get :new
@@ -35,5 +36,7 @@ class WeightControllerTest < ActionController::TestCase
     get :destroy
     assert_response :success
   end
+
+
 
 end

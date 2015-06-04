@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
-  get 'weight/index'
+  get 'weights/index'
 
-  get 'weight/show'
+  get 'weights/show'
 
-  get 'weight/create'
+  get 'weights/create'
 
-  get 'weight/new'
+  get 'weights/new'
 
-  get 'weight/edit'
+  get 'weights/edit'
 
-  get 'weight/update'
+  get 'weights/update'
 
-  get 'weight/destroy'
+  get 'weights/destroy'
 
   get 'exercise_type/index'
 
