@@ -2,6 +2,10 @@
 
 one:
   name: MyString
+<<<<<<< HEAD
+=======
+
+>>>>>>> 40aa98a1ac58ebd3b0f400a8c8a42e3fbc69f5fd
 
 
 two:

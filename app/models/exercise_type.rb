@@ -1,4 +1,4 @@
 class ExerciseType < ActiveRecord::Base
-  belongs_to :exercises
+  has_many :exercises
 
 end
