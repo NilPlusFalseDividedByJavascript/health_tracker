@@ -1,6 +1,11 @@
 class WeightsController < ApplicationController
   before_action :set_weight, only: [:show, :edit, :update, :destroy]
 
+
+  def dashboard
+
+  end
+
   def index
     @weight = Weight.all
   end

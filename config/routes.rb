@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   #
   # get 'weights/destroy'
 
+  root'weights#dashboard'
+
   get 'exercise_type/index'
 
   get 'exercise_type/show'
