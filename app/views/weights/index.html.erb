@@ -12,13 +12,13 @@
   </thead>
 
   <tbody>
-    <% @weight.each do |weight| %>
+    <% @weight.each do |weights| %>
       <tr>
         <td><%= weights.weight %></td>
-        <td><%= weights.weight_date %></td>
-        <td><%= link_to 'Show', weight %></td>
-        <td><%= link_to 'Edit', edit_weights_path(weight) %></td>
-        <td><%= link_to 'Destroy', weight, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= weights.weigh_date %></td>
+        <td><%= link_to 'Show', weights %></td>
+        <td><%= link_to 'Edit', edit_weight_path(weights) %></td>
+        <td><%= link_to 'Destroy', weights, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
