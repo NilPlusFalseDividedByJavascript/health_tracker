@@ -22,16 +22,16 @@ ActiveRecord::Schema.define(version: 20150604183108) do
 
   create_table "excercises", force: :cascade do |t|
     t.integer  "cal_burn"
+    t.integer  "excercise_type_id"
     t.date     "burn_date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   create_table "exercise_types", force: :cascade do |t|
     t.string   "name"
-    t.integer  "ex_perform_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "steps", force: :cascade do |t|
