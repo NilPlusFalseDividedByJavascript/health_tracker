@@ -16,12 +16,9 @@ class WeightsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-
-
-
   test "should create weight" do
     assert_difference('Weight.count') do
-      post :create, weight: { weigh_date: @potato.weigh_date, weight: @potato.weight }
+      post :create, weight: { weigh_date: @potato.weigh_date-1.day, weight: @potato.weight }
     end
 
     assert_redirected_to weight_path(assigns(:weight))

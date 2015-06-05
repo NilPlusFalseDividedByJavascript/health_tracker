@@ -2,7 +2,11 @@
 
 one:
   name: MyString
+<<<<<<< HEAD
   id: 1
+=======
+
+>>>>>>> abce0408898a5c6ebc9b56f50eec1899b946d3ae
 
 two:
   name: two
