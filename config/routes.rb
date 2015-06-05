@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
-  get 'weights/index'
-
-  get 'weights/show'
-
-  get 'weights/create'
-
-  get 'weights/new'
-
-  get 'weights/edit'
-
-  get 'weights/update'
-
-  get 'weights/destroy'
+  # get 'weights/index'
+  #
+  # get 'weights/show'
+  #
+  # post 'weights/create'
+  #
+  # get 'weights/new'
+  #
+  # get 'weights/edit'
+  #
+  # get 'weights/update'
+  #
+  # get 'weights/destroy'
 
   get 'exercise_type/index'
 
@@ -39,6 +39,7 @@ Rails.application.routes.draw do
 
   get 'exercise_typeindex/create'
 
+  resources :weights
   resources :excercises
   resources :steps
   resources :consumed_cals

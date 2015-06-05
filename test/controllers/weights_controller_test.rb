@@ -3,7 +3,7 @@ require 'test_helper'
 class WeightsControllerTest < ActionController::TestCase
 
   setup do
-    @weight = weights(:one)
+    @potato = weights(:one)
   end
 
   test "should get index" do
@@ -12,18 +12,20 @@ class WeightsControllerTest < ActionController::TestCase
   end
 
   test "should get show" do
-    get :show, id: weights(:one).id
+    get :show, id: @potato.id
     assert_response :success
   end
 
 
 
 
-  test "should get create" do
-    post :create, weight: { weigh_date: @weight.weigh_date, weight: @weight.weight }
-    assert_response :success
+  test "should create weight" do
+    assert_difference('Weight.count') do
+      post :create, weight: { weigh_date: @potato.weigh_date, weight: @potato.weight }
+    end
+
+    assert_redirected_to weight_path(assigns(:weight))
   end
-  #assert_redirected_to step_path(assigns(:step))
 
 
 
