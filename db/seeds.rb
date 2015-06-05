@@ -6,7 +6,18 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+activities = ["Cardio", "Swimming", "Running", "Hiking", "Walking", "Swimming", "Biking",
+  "Aerobics", "Sit-ups"]
 
-ExerciseType.create(name: "Cardio")
-ExerciseType.create(name: "Strength Training")
-ExerciseType.create(name: "MoNuts")
+activities.each do |a|
+  ExerciseType.create!(name: a)
+end
+
+
+5.times do
+  ConsumedCal.create!(cal_consume: rand(500..3000), consume_date: Faker::Date.backward(14) )
+end
+
+5.times do
+  Excercise.create!(cal_burn: rand(0..2000), excercise_type_id: rand(1..9), burn_date: Faker::Date.backward(14)   )
+end

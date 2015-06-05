@@ -3,7 +3,10 @@
 one:
   cal_burn: 1
   burn_date: 2015-06-04
+  excercise_type_id: 2
+
 
 two:
   cal_burn: 1
   burn_date: 2015-06-04
+  excercise_type_id: 1
