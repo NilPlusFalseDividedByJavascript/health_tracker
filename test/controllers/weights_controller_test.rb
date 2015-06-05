@@ -28,17 +28,6 @@ class WeightsControllerTest < ActionController::TestCase
   end
 
 
-
-
-
-
-
-
-
-
-
-
-
   test "should get new" do
     get :new
     assert_response :success
@@ -66,7 +55,7 @@ class WeightsControllerTest < ActionController::TestCase
     assert_difference('Weight.count', -1) do
       delete :destroy, id: @potato
     end
-    assert_redirected_to weight_path
+    assert_redirected_to weights_path
   end
 
 
