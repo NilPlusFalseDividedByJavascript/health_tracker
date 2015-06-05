@@ -43,14 +43,14 @@ class WeightsController < ApplicationController
     end
   end
 
+
   def destroy
     @weight.destroy
     respond_to do |format|
-      format.html { redirect_to steps_url, notice: 'Weight was successfully destroyed.' }
+      format.html { redirect_to weights_url, notice: 'Weight was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
-
 
 
 private
