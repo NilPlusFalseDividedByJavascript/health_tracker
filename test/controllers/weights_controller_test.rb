@@ -29,13 +29,6 @@ class WeightsControllerTest < ActionController::TestCase
 
 
 
-  # test "should create step" do
-  #   assert_difference('Step.count') do
-  #     post :create, step: { step_date: @step.step_date, steps_taken: @step.steps_taken }
-  #   end
-  #
-  #   assert_redirected_to step_path(assigns(:step))
-  # end
 
 
 
@@ -56,10 +49,31 @@ class WeightsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+
+
+
+
+  # test "should get update" do
+  #   get :update, id: weights(:one).id
+  #   assert_response :success
+  # end
+
   test "should get update" do
-    get :update, id: weights(:one).id
-    assert_response :success
+    patch :update, id: @potato, weight: { weigh_date: @potato.weigh_date, weight: @potato.weight }
+    assert_redirected_to weight_path(assigns(:weight))
   end
+
+
+
+  # test "should update step" do
+  #   patch :update, id: @step, step: { step_date: @step.step_date, steps_taken: @step.steps_taken }
+  #   assert_redirected_to step_path(assigns(:step))
+  # end
+
+
+
+
+
 
   test "should get destroy" do
     get :destroy, id: weights(:one).id
