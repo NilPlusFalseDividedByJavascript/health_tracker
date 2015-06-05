@@ -1,3 +1,3 @@
 class Excercise < ActiveRecord::Base
-  has_many :exercise_types
+  belongs_to :exercise_types
 end
