@@ -1,17 +1,11 @@
 <h1>Health Tracker</h1>
 
+<h1>Steps Traveled This Month: <%= @steps_traveled %> Steps</h1>
 
-<h3>navigation</h3>
+<h1> Number of times Weighed: <%= @weight_count %></h1>
 
+<h1> Calorie Difference: <%= @calorie_dif %></h1>
 
+<h1>Calorie Consumed <%= @cal_total %></ </h1>
 
-<p>
-
-  <%= link_to 'Weight', weights_path %> </br>
-
-  <%= link_to 'Calories Consumed', consumed_cals_path %> </br>
-
-  <%= link_to 'Excercises', excercises_path %> </br>
-
-  <%= link_to 'Steps', excercises_path %></br>
-</p>
+<h1>Calorie Burned<%= @cal_burn %></h1>

@@ -3,7 +3,11 @@ class WeightsController < ApplicationController
 
 
   def dashboard
-
+    @steps_traveled = Step.total
+    @weight_count = Weight.total
+    @calorie_dif = ConsumedCal.total - Excercise.total
+    @cal_total = ConsumedCal.total
+    @cal_burn = Excercise.total
   end
 
   def index
