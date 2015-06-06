@@ -1,34 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Weight</h1>
+<h1>Weight Data</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Weight</th>
-      <th>Date Weighed</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @weight.each do |weights| %>
+<div class="grapes">
+  <table>
+    <thead>
       <tr>
-        <td><%= weights.weight %></td>
-        <td><%= weights.weigh_date %></td>
-        <td><%= link_to 'Show', weights %></td>
-        <td><%= link_to 'Edit', edit_weight_path(weights) %></td>
-        <td><%= link_to 'Destroy', weights, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Weight</th>
+        <th>Date Weighed</th>
+        <th colspan="3">Table Actions</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @weight.each do |weights| %>
+        <tr>
+          <td><%= weights.weight %></td>
+          <td><%= weights.weigh_date %></td>
+          <td><%= link_to 'Show', weights %></td>
+          <td><%= link_to 'Edit', edit_weight_path(weights) %></td>
+          <td><%= link_to 'Destroy', weights, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 
 
-<%= link_to 'Home', root_path %> </br>
-<%= link_to 'Weight', weights_path %> </br>
-<%= link_to 'Calories Consumed', consumed_cals_path %> </br>
-<%= link_to 'Excercises', excercises_path %> </br>
-<%= link_to 'Steps', excercises_path %></br>
-<%= link_to 'New Weight', new_weight_path %>
+
+
+
+
+
+  <p class="modify">
+    <%= link_to 'New Weight', new_weight_path %></p>

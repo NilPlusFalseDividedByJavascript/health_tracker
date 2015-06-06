@@ -8,6 +8,19 @@
 </head>
 <body>
 
+<div>
+
+    <p class="headnav">
+        <%= link_to 'Home', root_path %> </br></p>
+    <p class="headnav">
+      <%= link_to 'Weight', weights_path %> </br></p>
+    <p class="headnav">
+        <%= link_to 'Calories Consumed', consumed_cals_path %> </br></p>
+    <p class="headnav">
+      <%= link_to 'Excercises', excercises_path %> </br></p>
+    <p class="headnav">
+      <%= link_to 'Steps', excercises_path %></br></p>
+</div>
 <%= yield %>
 
 </body>
