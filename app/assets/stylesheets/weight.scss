@@ -14,7 +14,7 @@ h1 {
   position: relative;
   text-align: center;
 
-  background: rgb(255,0,113);
+  background:rgb(255, 0, 113);
   // background: -moz-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
   // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,132,0.35)), color-stop(50%, rgba(255,0,132,0.79)), color-stop(73%, rgba(255,0,132,0.99)), color-stop(74%, rgba(255,0,132,1)));
   // background: -webkit-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
@@ -40,11 +40,11 @@ padding-bottom: 5px
 
 }
 
-.grapes{
-
+.table_style_master{
+  position: fixed;
   padding-left: 2.5%;
   padding-right: 2.5%;
-  position: fixed;
+  // position: fixed;
   top: 25%;
   margin-left: 10px;
   right:450px;
@@ -69,6 +69,31 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   overflow: scroll;
 
 }
+
+
+.table_style_master>.apple {
+  background-color: black;
+
+}
+
+.table_style_master>.excercise_table{
+
+  // color:blue;
+  // // padding-left: 2.5%;
+  // // padding-right: 2.5%;
+  // position: absolute;
+  // // top: 25%;
+  // // margin-left: 10px;
+  // right:10px;
+  // // text-align: center;
+
+}
+
+
+
+
+
+
 
 th{
   //cell spacing
@@ -143,7 +168,7 @@ tr{
 
 .new_item{
   font-size: 20px;
-  background: rgb(255,0,113);
+  background: rgb(0, 255, 48);
   position: absolute;
   bottom: 10%;
   left: 42%;
@@ -153,12 +178,18 @@ tr{
   padding-right: 2.5%;
 
   a:link{
-    color: white;
+    color: black;
     text-decoration: none;
   }
   a:visited{
-    color: white;
+    color: black;
     text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+    background-color: transparent;
+
+
   }
   //border
   border-radius: 18px 18px 18px 18px;
