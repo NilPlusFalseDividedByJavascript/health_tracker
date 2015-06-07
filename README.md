@@ -2,7 +2,7 @@
 
 ##What is it?
 Are you tired of trying to remember how much you weighed two months ago? Do want to
-see how your calorie intake, and activity level affects your weight over time?
+see how your calorie intake and activity level affects your weight over time?
 Health Tracker is your answer. Health Tracker is a web application that allows
 you to track you exercise, weight, and calorie data in one location. The insight
 that you gain with Health Tracker will help you reach your health goals.
