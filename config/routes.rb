@@ -14,32 +14,32 @@ Rails.application.routes.draw do
   # get 'weights/destroy'
 
   root'weights#dashboard'
-
-  get 'exercise_type/index'
-
-  get 'exercise_type/show'
-
-  get 'exercise_type/new'
-
-  get 'exercise_type/edit'
-
-  get 'exercise_type/update'
-
-  get 'exercise_type/destroy'
-
-  get 'exercise_type/create'
-
-  get 'exercise_typeindex/show'
-
-  get 'exercise_typeindex/new'
-
-  get 'exercise_typeindex/edit'
-
-  get 'exercise_typeindex/update'
-
-  get 'exercise_typeindex/destroy'
-
-  get 'exercise_typeindex/create'
+  #
+  # get 'exercise_type/index'
+  #
+  # get 'exercise_type/show'
+  #
+  # get 'exercise_type/new'
+  #
+  # get 'exercise_type/edit'
+  #
+  # get 'exercise_type/update'
+  #
+  # get 'exercise_type/destroy'
+  #
+  # get 'exercise_type/create'
+  #
+  # get 'exercise_typeindex/show'
+  #
+  # get 'exercise_typeindex/new'
+  #
+  # get 'exercise_typeindex/edit'
+  #
+  # get 'exercise_typeindex/update'
+  #
+  # get 'exercise_typeindex/destroy'
+  #
+  # get 'exercise_typeindex/create'
 
   resources :weights
   resources :excercises

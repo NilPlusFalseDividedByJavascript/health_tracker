@@ -1,6 +1,6 @@
 class Weight < ActiveRecord::Base
 
-  #validates :weigh_date, uniqueness: true
+  validates :weigh_date, uniqueness: true
 
   #so my problem is that this is only checking date physically created, not the date the
   #user puts into the table
