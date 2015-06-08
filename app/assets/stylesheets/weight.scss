@@ -1,205 +1,205 @@
-// Place all the styles related to the Weight controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-body{
-  background-image: url("http://i.imgur.com/A2rqm.png");
-  font-family: Georgia, Times, serif;
-}
-
-
-
-
-h1 {
-  color: white;
-  position: relative;
-  text-align: center;
-
-  background:rgb(255, 0, 113);
-  // background: -moz-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,132,0.35)), color-stop(50%, rgba(255,0,132,0.79)), color-stop(73%, rgba(255,0,132,0.99)), color-stop(74%, rgba(255,0,132,1)));
-  // background: -webkit-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: -o-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: -ms-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: linear-gradient(to right, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#ff0084', GradientType=1 );
-
-
-  //border
-  border-radius: 18px 18px 18px 18px;
-  -moz-border-radius: 18px 18px 18px 18px;
-  -webkit-border-radius: 18px 18px 18px 18px;
-  border: 5px solid #000000;
-
-  //shadow
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-padding-top: 5px;
-padding-bottom: 5px
-
-}
-
-.table_style_master{
-  position: fixed;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-  // position: fixed;
-  top: 25%;
-  margin-left: 10px;
-  right:450px;
-  text-align: center;
-
-  height: 500px;
-  // width:-400px;
-  background-color: white;
-  border-color: black;
-  border-radius: 18px 18px 18px 18px;
-  -moz-border-radius: 18px 18px 18px 18px;
-  -webkit-border-radius: 18px 18px 18px 18px;
-  border: 5px solid #000000;
-
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-  min-height: 50%;
-  max-height:50%;
-  overflow: hidden;
-  overflow: scroll;
-
-}
-
-
-.table_style_master>.apple {
-  background-color: black;
-
-}
-
-.table_style_master>.excercise_table{
-
-  // color:blue;
-  // // padding-left: 2.5%;
-  // // padding-right: 2.5%;
-  // position: absolute;
-  // // top: 25%;
-  // // margin-left: 10px;
-  // right:10px;
-  // // text-align: center;
-
-}
-
-
-
-
-
-
-
-th{
-  //cell spacing
-  padding-left:20px;
-  padding-right:20px;
-
-  //border and background
-  border-bottom: 2px solid #111111;
-
-  background-color: rgb(158, 151, 164);
-  border-radius: 18px 18px 18px 18px;
-  -moz-border-radius: 18px 18px 18px 18px;
-  -webkit-border-radius: 18px 18px 18px 18px;
-  border: 0px solid #000000;
-}
-tr{
-  //cell spacing
-  padding-left:20px;
-  padding-right:20px;
-
-  overflow: hidden;
-  overflow: scroll;
-}
-
-
-
-
-.headnav{
-  a:visited{
-    color: white;
-    text-decoration: none;
-  }
-  a:link{
-    color: white;
-    text-decoration: none;
-  }
-
-  font-size: 20px;
-  font-style: normal;
-
-  display: inline-block;
-  text-align: center;
-  margin-left: 5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-
-
-  //bacground and gradient
-  background:rgb(255, 0, 113);
-  // background: -moz-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,132,0.35)), color-stop(50%, rgba(255,0,132,0.79)), color-stop(73%, rgba(255,0,132,0.99)), color-stop(74%, rgba(255,0,132,1)));
-  // background: -webkit-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: -o-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: -ms-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // background: linear-gradient(to right, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#ff0084', GradientType=1 );
-
-
-  //border
-  border-radius: 18px 18px 18px 18px;
-  -moz-border-radius: 18px 18px 18px 18px;
-  -webkit-border-radius: 18px 18px 18px 18px;
-  border: 5px solid #000000;
-
-  //shadow
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-}
-
-
-.new_item{
-  font-size: 20px;
-  background: rgb(0, 255, 48);
-  position: absolute;
-  bottom: 10%;
-  left: 42%;
-
-  // margin-left: 5%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-
-  a:link{
-    color: black;
-    text-decoration: none;
-  }
-  a:visited{
-    color: black;
-    text-decoration: none;
-  }
-  a:hover{
-    text-decoration: none;
-    background-color: transparent;
-
-
-  }
-  //border
-  border-radius: 18px 18px 18px 18px;
-  -moz-border-radius: 18px 18px 18px 18px;
-  -webkit-border-radius: 18px 18px 18px 18px;
-  border: 5px solid #000000;
-
-  //shadow
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-
-}
+// // Place all the styles related to the Weight controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+// body{
+//   background-image: url("http://i.imgur.com/A2rqm.png");
+//   font-family: Georgia, Times, serif;
+// }
+//
+//
+//
+//
+// h1 {
+//   color: white;
+//   position: relative;
+//   text-align: center;
+//
+//   background:rgb(255, 0, 113);
+//   // background: -moz-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,132,0.35)), color-stop(50%, rgba(255,0,132,0.79)), color-stop(73%, rgba(255,0,132,0.99)), color-stop(74%, rgba(255,0,132,1)));
+//   // background: -webkit-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: -o-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: -ms-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: linear-gradient(to right, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#ff0084', GradientType=1 );
+//
+//
+//   //border
+//   border-radius: 18px 18px 18px 18px;
+//   -moz-border-radius: 18px 18px 18px 18px;
+//   -webkit-border-radius: 18px 18px 18px 18px;
+//   border: 5px solid #000000;
+//
+//   //shadow
+//   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+//   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+//   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+//
+// padding-top: 5px;
+// padding-bottom: 5px
+//
+// }
+//
+// .table_style_master{
+//   position: fixed;
+//   padding-left: 2.5%;
+//   padding-right: 2.5%;
+//   // position: fixed;
+//   top: 25%;
+//   margin-left: 10px;
+//   right:450px;
+//   text-align: center;
+//
+//   height: 500px;
+//   // width:-400px;
+//   background-color: white;
+//   border-color: black;
+//   border-radius: 18px 18px 18px 18px;
+//   -moz-border-radius: 18px 18px 18px 18px;
+//   -webkit-border-radius: 18px 18px 18px 18px;
+//   border: 5px solid #000000;
+//
+//   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+// -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+// box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+//
+//   min-height: 50%;
+//   max-height:50%;
+//   overflow: hidden;
+//   overflow: scroll;
+//
+// }
+//
+//
+// .table_style_master>.apple {
+//   background-color: black;
+//
+// }
+//
+// .table_style_master>.excercise_table{
+//
+//   color:blue;
+//   // padding-left: 2.5%;
+//   // padding-right: 2.5%;
+//   position: absolute;
+//   // top: 25%;
+//   // margin-left: 10px;
+//   right:10px;
+//   // text-align: center;
+//
+// }
+//
+//
+//
+//
+//
+//
+//
+// th{
+//   //cell spacing
+//   padding-left:20px;
+//   padding-right:20px;
+//
+//   //border and background
+//   border-bottom: 2px solid #111111;
+//
+//   background-color: rgb(158, 151, 164);
+//   border-radius: 18px 18px 18px 18px;
+//   -moz-border-radius: 18px 18px 18px 18px;
+//   -webkit-border-radius: 18px 18px 18px 18px;
+//   border: 0px solid #000000;
+// }
+// tr{
+//   //cell spacing
+//   padding-left:20px;
+//   padding-right:20px;
+//
+//   overflow: hidden;
+//   overflow: scroll;
+// }
+//
+//
+//
+//
+// // .headnav{
+// //   a:visited{
+// //     color: white;
+// //     text-decoration: none;
+// //   }
+// //   a:link{
+// //     color: white;
+// //     text-decoration: none;
+// //   }
+// //
+// //   font-size: 20px;
+// //   font-style: normal;
+// //
+// //   display: inline-block;
+// //   text-align: center;
+// //   margin-left: 5%;
+// //   padding-left: 2.5%;
+// //   padding-right: 2.5%;
+//
+//
+//   //bacground and gradient
+//   // background:rgb(255, 0, 113);
+//   // background: -moz-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,0,132,0.35)), color-stop(50%, rgba(255,0,132,0.79)), color-stop(73%, rgba(255,0,132,0.99)), color-stop(74%, rgba(255,0,132,1)));
+//   // background: -webkit-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: -o-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: -ms-linear-gradient(left, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // background: linear-gradient(to right, rgba(255,0,132,0.35) 0%, rgba(255,0,132,0.79) 50%, rgba(255,0,132,0.99) 73%, rgba(255,0,132,1) 74%);
+//   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0084', endColorstr='#ff0084', GradientType=1 );
+//
+//
+//   //border
+// //   border-radius: 18px 18px 18px 18px;
+// //   -moz-border-radius: 18px 18px 18px 18px;
+// //   -webkit-border-radius: 18px 18px 18px 18px;
+// //   border: 5px solid #000000;
+// //
+// //   //shadow
+// //   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+// //   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+// //   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+// //
+// // }
+//
+//
+// .new_item{
+//   font-size: 20px;
+//   background: rgb(0, 255, 48);
+//   position: absolute;
+//   bottom: 10%;
+//   left: 42%;
+//
+//   // margin-left: 5%;
+//   padding-left: 2.5%;
+//   padding-right: 2.5%;
+//
+//   a:link{
+//     color: black;
+//     text-decoration: none;
+//   }
+//   a:visited{
+//     color: black;
+//     text-decoration: none;
+//   }
+//   a:hover{
+//     text-decoration: none;
+//     background-color: transparent;
+//
+//
+//   }
+//   //border
+//   border-radius: 18px 18px 18px 18px;
+//   -moz-border-radius: 18px 18px 18px 18px;
+//   -webkit-border-radius: 18px 18px 18px 18px;
+//   border: 5px solid #000000;
+//
+//   //shadow
+//   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+//   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+//   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+//
+// }
