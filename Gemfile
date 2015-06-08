@@ -36,13 +36,8 @@ gem 'puma'
 group :production do
   gem 'rails_12factor'
   gem 'pg'
-<<<<<<< HEAD
-  gem 'puma'
-=======
 end
->>>>>>> 00d9ea79012458009d2cc239c6302bc5fa3a4701
 
-end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -56,8 +51,5 @@ group :development, :test do
   gem 'faker'
 
   gem 'sqlite3'
-<<<<<<< HEAD
 
-=======
->>>>>>> 00d9ea79012458009d2cc239c6302bc5fa3a4701
 end
