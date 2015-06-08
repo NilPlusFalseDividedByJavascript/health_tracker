@@ -1,14 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Weight:</strong>
-  <%= @weight.weight %>
-</p>
+<div class="table_style_master">
+  <p>
+    <strong>Weight:</strong>
+    <%= @weight.weight %>
+  </p>
 
-<p>
-  <strong>Step date:</strong>
-  <%= @weight.weigh_date %>
-</p>
-
+  <p>
+    <strong>Step date:</strong>
+    <%= @weight.weigh_date %>
+  </p>
+</div>
+<div class="new_item">
 <%= link_to 'Edit', edit_weight_path(@weight) %> |
 <%= link_to 'Back', weights_path %>
+</div>

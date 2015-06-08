@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Steps taken:</strong>
-  <%= @step.steps_taken %>
-</p>
+<div class="table_style_master">
+  <p>
+    <strong>Steps taken:</strong>
+    <%= @step.steps_taken %>
+  </p>
 
-<p>
-  <strong>Step date:</strong>
-  <%= @step.step_date %>
-</p>
+  <p>
+    <strong>Step date:</strong>
+    <%= @step.step_date %>
+  </p>
+</div>
 
+
+<div class="new_item">
 <%= link_to 'Edit', edit_step_path(@step) %> |
 <%= link_to 'Back', steps_path %>
+</div>

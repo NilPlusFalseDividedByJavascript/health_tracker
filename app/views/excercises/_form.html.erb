@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+<div class="table_style_master">
   <div class="field">
     <%= f.label :cal_burn %><br>
     <%= f.number_field :cal_burn %>
@@ -23,7 +24,9 @@
     <%= f.collection_select( :excercise_type_id, ExerciseType.all, :id, :name) %>
   </div>
 
+
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>
