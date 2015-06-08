@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
-#ruby 2.2.1
 
+
+ruby '2.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -27,15 +29,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
+gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production do
   gem 'rails_12factor'
   gem 'pg'
+<<<<<<< HEAD
   gem 'puma'
+=======
+end
+>>>>>>> 00d9ea79012458009d2cc239c6302bc5fa3a4701
 
 end
 group :development, :test do
@@ -51,5 +56,8 @@ group :development, :test do
   gem 'faker'
 
   gem 'sqlite3'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 00d9ea79012458009d2cc239c6302bc5fa3a4701
 end
