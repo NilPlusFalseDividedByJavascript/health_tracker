@@ -36,8 +36,10 @@ gem 'puma'
 group :production do
   gem 'rails_12factor'
   gem 'pg'
+
   gem 'puma'
 end
+
 
 
 group :development, :test do
@@ -53,4 +55,8 @@ group :development, :test do
   gem 'faker'
 
   gem 'sqlite3'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b1bb0f6660ac60ff40f689121e8ca1715a48ca5
 end
